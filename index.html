@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Spotify - Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+<main>
+    <div class="login-card">
+        <div class="content-wrapper">
+            <img src="imgs/Spotify-Logo.wine.png" alt="Spotify Logo" class="logo" />
+            <h1>Log in to Spotify</h1>
+
+            <div class="social-login">
+                <button class="social-btn google">
+                    <img src="imgs/Google__G__logo.svg.webp" alt="Google" />
+                    <span>Continue with Google</span>
+                </button>
+                <button class="social-btn facebook">
+                    <img src="imgs/Facebook_Logo_(2019).png" alt="Facebook" />
+                    <span>Continue with Facebook</span>
+                </button>
+                <button class="social-btn apple">
+                    <img src="imgs/Apple_logo_white.svg" alt="Apple" />
+                    <span>Continue with Apple</span>
+                </button>
+            </div>
+
+            <hr class="divider" />
+
+            <form id="login-form">
+                <label for="email"><strong>Email or username</strong></label>
+                <input type="text" id="email" name="email" placeholder="Email or username" />
+                <p id="email-error" class="error-msg"><span class="error-icon">!</span></p>
+
+                <label for="password"><strong>Password</strong></label>
+                <input type="password" id="password" name="password" placeholder="Password" />
+                <p id="password-error" class="error-msg"><span class="error-icon">!</span></p>
+
+                <button type="submit" class="login-btn">Log in</button>
+            </form>
+        </div>
+        <p class="signup-text">Don’t have an account? <a href="#">Sign up for Spotify</a></p>
+    </div>
+</main>
+
+<footer>
+    <p>This site is protected by reCAPTCHA and the Google
+        <a href="#">Privacy Policy</a> and
+        <a href="#">Terms of Service</a> apply.
+    </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
